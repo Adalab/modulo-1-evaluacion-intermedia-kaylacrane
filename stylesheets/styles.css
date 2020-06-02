@@ -1,12 +1,30 @@
+/*VARIABLES*/
+:root {
+  --primary-font: "Rubik", sans-serif;
+  --primary-color: #3cdbc0;
+  --secondary-color: #4a4a4a;
+  --light-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*HEADER*/
 
 .header {
 }
 
-.logo {
+.logo-container {
 }
 
-.menu {
+.img-logo .menu {
 }
 
 /*MAIN*/
