@@ -77,9 +77,13 @@ a {
   .header .wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+
     align-self: center;
     align-items: center;
+  }
+
+  .header {
+    padding: 20px 30px;
   }
 
   /*MAIN*/
