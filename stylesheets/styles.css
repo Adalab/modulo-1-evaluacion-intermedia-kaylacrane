@@ -2,7 +2,7 @@
 :root {
   --primary-font: "Rubik", sans-serif;
   --primary-color: #3cdbc0;
-  --secondary-color: #4a4a4a;
+  --secondary-color: hsl(0, 0%, 29%);
   --light-color: #ffffff;
 }
 
@@ -10,26 +10,65 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--primary-font);
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /*HEADER*/
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-color);
+  padding: 10px 0 13px 0;
+  margin: auto;
 }
 
 .logo-container {
+  text-align: center;
 }
 
-.img-logo .menu {
+.img-logo {
+}
+
+.menu {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 10px 10px 0 10px;
 }
 
 /*MAIN*/
+
 .main {
+  height: 100vh;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.title {
+.main span {
+  display: block;
+  color: var(--light-color);
+  font-size: 1.875rem;
+  font-weight: bold;
 }
