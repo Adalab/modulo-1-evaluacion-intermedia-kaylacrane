@@ -42,9 +42,6 @@ a {
   text-align: center;
 }
 
-.img-logo {
-}
-
 .menu {
   text-align: center;
   font-size: 1rem;
@@ -76,6 +73,7 @@ a {
 }
 
 @media all and (min-width: 768px) {
+  /*HEADER*/
   .header .wrapper {
     display: flex;
     justify-content: space-between;
@@ -84,11 +82,7 @@ a {
     align-items: center;
   }
 
-  .menu,
-  .logo-container {
-    height: fit-content;
-  }
-
+  /*MAIN*/
   .main span {
     font-size: 2.5rem;
   }
