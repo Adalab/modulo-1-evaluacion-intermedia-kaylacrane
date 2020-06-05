@@ -1,25 +1,22 @@
-/*VARIABLES*/
-:root {
-  --primary-font: "Rubik", sans-serif;
-  --primary-color: #3cdbc0;
-  --secondary-color: hsl(0, 0%, 29%);
-  --light-color: #ffffff;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--primary-font);
+  color: inherit;
+  text-decoration: none;
+}
+
+/*VARIABLES*/
+:root {
+  --primary-font: "Rubik", sans-serif;
+  --primary-color: #3cdbc0;
+  --secondary-color: #4a4a4a;
+  --light-color: #ffffff;
 }
 
 html {
   font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  font-family: var(--primary-font);
 }
 
 .wrapper {
@@ -35,22 +32,39 @@ a {
   top: 0;
   width: 100%;
   background-color: var(--light-color);
-  padding: 10px 0 13px 0;
+  padding: 10px 0 3px 0;
+  z-index: 1;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-container {
   text-align: center;
+  display: inline-block;
 }
 
-.menu {
+.logo-container img {
+  width: 100%;
+}
+
+.header-menu {
   text-align: center;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
-.menu li {
+.header-menu li {
   display: inline-block;
-  padding: 10px 10px 0 10px;
+}
+
+.header-menu li a {
+  display: block;
+  padding: 10px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
 }
 
 /*MAIN*/
@@ -58,27 +72,25 @@ a {
 .main {
   height: 100vh;
   background-color: var(--primary-color);
-  text-transform: capitalize;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  color: var(--light-color);
+  top: 118px;
 }
 
-.main span {
+.main-title span {
   display: block;
-  color: var(--light-color);
   font-size: 1.875rem;
-  font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media all and (min-width: 768px) {
   /*HEADER*/
   .header .wrapper {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-
-    align-self: center;
     align-items: center;
   }
 
@@ -87,7 +99,7 @@ a {
   }
 
   /*MAIN*/
-  .main span {
+  .main-title span {
     font-size: 2.5rem;
   }
 }
